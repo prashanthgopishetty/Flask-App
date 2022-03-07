@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"  crossorigin="anonymous">
+    {% if title%}
+        <title>app - {{ title }}</title>
+    {% else %}
+        <title>app </title>
+    {% endif %}
+</head>
+<body>
+<div class="container">
+    {% block content %} {% endblock content %}
+</div>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.ks') }}" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
